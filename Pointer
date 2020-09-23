@@ -32,7 +32,7 @@ int main()
    
     cout << *pName << "," << " a " << *pCourse;
     cout<< " student is " << *pAge;
-    cout<<"years old"; 
+    cout<<" years old"; 
   
     return 0; 
 }
