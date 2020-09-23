@@ -1,0 +1,89 @@
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+int ope,A,B;
+
+
+cout<<"Choose an Operation:\n [1]AND(&)\n [2]OR(|)\n [3]XOR(^)\n [4]Complement(~)\n [5]2's Complement\n [6]Right Shift(>>)\n [7]Left Shift(<<)\n\t\t\t\t\t->";
+cin>>ope;
+
+
+if(ope==1)
+{
+  cout<<"\nEnter First Number\t\t";
+  cin>>A;
+  cout<<"Enter Second Number\t\t";
+  cin>>B;
+cout<<"—————————————————————————————————————————————\nAnswer\t\t\t\t\t\t"<<(A&B);
+cout<<"—————————————————————————————————————————————";
+cout<<endl;
+}
+
+else if(ope==2)
+{
+  cout<<"\nEnter First Number\t\t";
+  cin>>A;
+  cout<<"Enter Second Number\t\t";
+  cin>>B;
+cout<<"—————————————————————————————————————————————\nAnswer\t\t\t\t\t\t"<<(A|B);
+cout<<"—————————————————————————————————————————————";
+cout<<endl;
+}
+
+else if(ope==3)
+{
+  cout<<"\nEnter First Number\t\t";
+  cin>>A;
+  cout<<"Enter Second Number\t\t";
+  cin>>B;
+cout<<"—————————————————————————————————————————————\nAnswer\t\t\t\t\t\t"<<(A^B);
+cout<<"—————————————————————————————————————————————";
+cout<<endl;
+}
+
+else if(ope==4)
+{
+  cout<<"\nEnter the Number\t\t\t";
+  cin>>A;
+cout<<"—————————————————————————————————————————————\nAnswer\t\t\t\t\t\t"<<(~A);
+cout<<"—————————————————————————————————————————————";
+cout<<endl;
+}
+
+else if(ope==5)
+{
+  cout<<"\nEnter the Number\t\t\t\t\t";
+  cin>>A;
+cout<<"—————————————————————————————————————————————\nAnswer\t\t\t\t\t\t\t\t"<<(~A+1);
+cout<<"—————————————————————————————————————————————";
+cout<<endl;
+}
+
+else if(ope==6)
+{
+  cout<<"\nEnter the Number\t\t\t\t\t";
+  cin>>A;
+  cout<<"Enter Number of Bit(s)\t\t\t";
+  cin>>B;
+cout<<"—————————————————————————————————————————————\nAnswer\t\t\t\t\t\t\t\t"<<(A>>B);
+cout<<"—————————————————————————————————————————————";
+cout<<endl;
+}
+
+if(ope==7)
+{
+  cout<<"\nEnter the Number\t\t\t\t\t";
+  cin>>A;
+  cout<<"Enter Number of Bit(s)\t\t\t";
+  cin>>B;
+cout<<"—————————————————————————————————————————————\nAnswer\t\t\t\t\t\t\t\t"<<(A<<B);
+cout<<"—————————————————————————————————————————————";
+cout<<endl;
+}
+
+
+
+return 0;
+}
