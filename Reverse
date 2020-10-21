@@ -1,0 +1,40 @@
+/* Programmed by: Angelica Pearl J. Tordil
+ */
+
+#include <iostream>
+using namespace std;
+  
+int main(){
+    int input[10], reverse[10], count, i;
+      
+    cout << "Enter array size: ";
+    cin >> count;
+     
+    if(count > 0 && count <= 10){ 
+    	for(i = 0; i < count; i++){
+    		cout << "Enter element at index "<< i << ": ";
+		    cin >> input[i];
+    	}
+    
+
+    	for(i = 0; i < count; i++){
+    	   	reverse[i] = input[count-i-1];
+    	}    
+    
+   		cout << "\n";
+    
+    	cout << "User input (original): ";
+    	for(i = 0; i < count; i++){
+       		 cout << input[i] << " ";
+		}
+    
+   		cout << "\n";
+    
+    	cout << "User input (reverse): ";
+    	for(i = 0; i < count; i++){
+   	    	 cout << reverse[i] << " ";
+   		}
+	}else cout << "Array size must be minimum of 1 and maximum of 10";
+          
+    return 0;
+}
