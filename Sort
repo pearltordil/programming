@@ -1,0 +1,61 @@
+/* Programmed by: Angelica Pearl Tordil
+ */
+
+#include <iostream>
+using namespace std;
+  
+int main(){
+    int input[10], original[10], i, j, temp;
+      
+    for(i = 0; i < 10; i++){
+   		cout << "Enter element at index "<< i << ": ";
+		cin >> input[i];
+		original[i] = input[i];
+    }
+    
+    for(i=0; i<10; i++)
+    {
+        for(j=i+1; j<10; j++)
+        {
+            if(input[i] > input[j])
+            {
+                temp = input[i];
+                input[i] = input[j];
+                input[j] = temp;
+            }
+        }
+    }
+  	cout << "\n";
+  	
+	cout << "User input (original): ";
+    for(i = 0; i < 10; i++){
+       		 cout << original[i] << " ";
+	}
+	cout << "\n";
+    
+    cout << "User input (ascending): ";
+    for(i = 0; i < 10; i++){
+  		cout << input[i] << " ";
+	}
+    cout << "\n";
+    
+    for(i=0; i<10; i++)
+    {
+        for(j=i+1; j<10; j++)
+        {
+            if(input[i] < input[j])
+            {
+                temp = input[i];
+                input[i] = input[j];
+                input[j] = temp;
+            }
+        }
+    }
+    
+    cout << "User input (descending): ";
+    for(i = 0; i < 10; i++){
+  		cout << input[i] << " ";
+	}
+     
+    return 0;
+}
